@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Can I Cook?</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>What Can I Cook?</h1>
+  <p>Enter the ingredients you have (separated by commas):</p>
+  
+  <input type="text" id="ingredientsInput" placeholder="e.g. eggs, tomato, cheese" />
+  <button id="findRecipesBtn">Find Recipes</button>
+  
+  <div id="recipesContainer"></div>
+
+  <!-- Recipe Modal -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="hackathon-branding">SEEIT HACKATHON 2025</div>
+      <div class="api-credit">
+        Powered by <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular API</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
